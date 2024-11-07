@@ -66,7 +66,7 @@ ip route 0.0.0.0/0 172.16.4.1
 ```
 router ospf 1
  network 172.16.1.0 0.0.0.3 area 0.0.0.0
- network 192.168.0.0 0.0.0.255 area 0.0.0.0
+ network 192.168.0.0 0.0.0.255 area 0.0.0.0 [Адрес в этой строчке указываем свою сеть. Пример: 10.0.0.0]
 !
 interface tunnel.1
  ip ospf authentication message-digest
